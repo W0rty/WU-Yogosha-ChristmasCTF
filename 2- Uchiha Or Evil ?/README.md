@@ -124,7 +124,16 @@ For the first bypass we will use the "@" character, which allows to modify the h
 var_dump(parse_url("http://google.com@uchiha.fuinjutsukeeper.tech:5000"));
 ```
 ```
-array(4) {                                                                                                                ["scheme"]=>                                                                                                            string(4) "http"                                                                                                        ["host"]=>                                                                                                              string(27) "uchiha.fuinjutsukeeper.tech"                                                                                ["port"]=>                                                                                                              int(5000)                                                                                                               ["user"]=>                                                                                                              string(10) "google.com"                                                                                               }
+array(4) {
+  ["scheme"]=>
+  string(4) "http"
+  ["host"]=>
+  string(27) "uchiha.fuinjutsukeeper.tech"
+  ["port"]=>
+  int(5000)
+  ["user"]=>
+  string(10) "google.com"
+}
 ```
 
 Here, we can fake our host and port to get the one expected by the check function.
